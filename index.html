@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The Secret Number | Game</title>
+		<link rel="stylesheet" href="style.css" />
+		<meta
+			name="description"
+			content="A simple web-based game where players try to guess a randomly selected number between 1 and 100 within a limited number of attempts."
+		/>
+	</head>
+	<body>
+		<main class="container">
+			<h1>¡Guess the Number!</h1>
+			<p>
+				A random number between 1 and 100 has been selected. Can you
+				guess it before you run out of attempts?
+			</p>
+			<form class="form">
+				<input
+					type="text"
+					id="guessField"
+					class="guessField"
+					placeholder="What number am I thinking of...?"
+					required
+				/>
+				<input
+					type="submit"
+					value="Submit Choice"
+					class="guessSubmit"
+				/>
+			</form>
+			<div class="results">
+				<p class="lastChoice"></p>
+				<p class="lowOrHigh"></p>
+				<p class="previousChoices"></p>
+			</div>
+		</main>
+		<footer class="footer">
+			<p>
+				Coded and Designed by
+				<a
+					href="https://github.com/gvillarroel-dev"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Villarroel Giuliana</a
+				>
+			</p>
+		</footer>
+	</body>
+</html>
